@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ToolBar from "./components/ToolBar";
+import ContentArea from "./components/ContentArea";
+import UploadFile from "./components/UploadFile";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h2>📤 Files Explorer 📤</h2>
+      <ToolBar />
+      <br></br>
+      <h2>📥 Fetching data from Dropbox: 📥</h2>
+      <ContentArea />
+      <br></br>
+      <h2>📥 Upload a file from the device: 📥</h2>
+      <UploadFile />
     </div>
   );
-}
+};
 
 export default App;

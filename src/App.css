@@ -1,38 +1,101 @@
-.App {
+:root {
+  --background: #fdc63e;
+  --foreground: #d4851e;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--background);
   text-align: center;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#toolbar {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.subfolder-container {
+  margin-top: 10px;
+}
+
+button {
+  -webkit-transition-duration: 0.1s; /* Safari */
+  transition-duration: 0.1s;
+  background-color: #f4595b;
+  border-radius: 8px;
+  border-bottom: 4px solid #c24648;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Oxygen", sans-serif;
+  letter-spacing: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #ff7375;
+  border: none;
+  border-radius: 8px;
+  border-bottom: 4px solid #c24648;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Oxygen", sans-serif;
+  letter-spacing: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:active {
+  background-color: #c24648;
+  border: none;
+  border-radius: 8px;
+  border-bottom: 4px solid #c24648;
+  color: #ccc;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Oxygen", sans-serif;
+  letter-spacing: 2px;
+}
+
+section,
+form {
+  background-color: #f4595b;
+  border-radius: 8px;
+  border-bottom: 4px solid #c24648;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Oxygen", sans-serif;
+  letter-spacing: 2px;
 }
